@@ -1,3 +1,4 @@
-module.exports = {
-    JWT_SECRET: ""
-}
+module.exports = (app) => {
+  require("./auth")(app);
+  require("./user")(app);
+};
